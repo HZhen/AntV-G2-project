@@ -276,9 +276,8 @@ export default {
   position: absolute;
   top: 0px;
   left: 0px;
-  box-shadow: none!important
+  box-shadow: none!important;
 }
-
 .custom-tooltip-item {
   width: 150px;
   height: 50px;
