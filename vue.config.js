@@ -1,3 +1,4 @@
+const webpack = require('webpack')
 const path = require('path')
 const resolve = dir => {
   return path.join(__dirname, dir)
@@ -21,8 +22,14 @@ module.exports = {
      .set('@images', resolve('src/assets/images'))
  },
 
- configureWebpack: config  => {
-    config.entry.app = ["babel-polyfill", "./src/main.js"];
+ configureWebpack:{
+    plugins: [
+      new webpack.ProvidePlugin({
+          $:"jquery",
+          jQuery:"jquery",
+          "windows.jQuery":"jquery"
+      })
+    ]
  },
 
  // vue-loader 配置项

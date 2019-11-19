@@ -1,10 +1,8 @@
 <template>
   <div id="main">
     <el-container style="min-width:1366px;height:100vh">
-      <el-main style="padding-top:0" id="mainBody">
-        <el-card>
-          <router-view />
-        </el-card>
+      <el-main style="padding:0" id="mainBody">
+        <router-view />
       </el-main>
     </el-container>
   </div>
@@ -14,10 +12,3 @@ export default {
   name: 'home'
 }
 </script>
-
-<style lang="less">
-body{
-  overflow-y:hidden;
-  overflow-x:hidden;
-}
-</style>

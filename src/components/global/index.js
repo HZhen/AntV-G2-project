@@ -12,8 +12,8 @@ function registerComponents(components) {
 
 let components = [
   // {
-  //   name: 'ScreenControls',
-  //   component: resolve => require(['./screenControls/index.vue'], resolve)
+  //   name: 'line-chart',
+  //   component: resolve => require(['./line-chart/index.vue'], resolve)
   // },
   
 ];
