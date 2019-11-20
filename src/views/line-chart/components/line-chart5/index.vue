@@ -214,7 +214,7 @@ export default {
         container: 'mountNode5',
         height: height,
         width: width,
-        padding: [100, 20, 30, 45] // 上右下左
+        padding: [100, 40, 30, 45] // 上右下左
       });
       chart.source(this.chartData);
       chart.tooltip({

@@ -8,7 +8,7 @@ export default {
   name:'',
   data () {
     return {
-      chart: null
+      chart: null,
     }
   },
   beforeRouteEnter (to, from, next) {
@@ -27,42 +27,27 @@ export default {
       // 如果图形存在则删除再创建，这个地方感觉稍微有点坑
       // 具体的G2 api函数说明请看上面提供的官网地址，此处不再逐一说明
       this.chart && this.chart.destroy();
-      $.getJSON('https://gw.alipayobjects.com/os/antvdemo/assets/data/oil-price.json', function(data) {
+      $.getJSON('https://gw.alipayobjects.com/os/antvdemo/assets/data/diamond.json', function(data) {
+        var ds = new DataSet();
+        var dv = ds.createView().source(data);
+        dv.transform({
+          type: 'bin.histogram',
+          field: 'depth',
+          binWidth: 1,
+          groupBy: ['cut'],
+          as: ['depth', 'count']
+        });
         var chart = new G2.Chart({
           container: 'mountNode7',
           height: height,
           width: width,
-          padding: [20, 140, 70, 35]
         });
-        chart.source(data);
-        chart.scale('date', {
-          range: [0, 1],
-          tickCount: 10,
-          type: 'timeCat'
-        });
-        chart.axis('date', {
-          label: {
-            textStyle: {
-              fill: '#aaaaaa'
-            }
-          }
-        });
-        chart.axis('price', {
-          label: {
-            textStyle: {
-              fill: '#aaaaaa'
-            }
-          }
-        });
+        chart.source(dv);
         chart.tooltip({
-          crosshairs: 'y',
-          share: true
+          crosshairs: false,
+          position: 'top'
         });
-        chart.legend({
-          attachLast: true
-        });
-        chart.line().position('date*price').shape('hv').color('country');
-
+        chart.intervalStack().position('depth*count').color('cut');
         chart.render();
       });
     }

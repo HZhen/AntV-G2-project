@@ -32,7 +32,7 @@ export default {
           container: 'mountNode3',
           height: height,
           width: width,
-          padding: [120]
+          padding: [60]
         });
 
         chart.source(data);

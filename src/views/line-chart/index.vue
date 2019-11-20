@@ -36,6 +36,11 @@
           <line-chart6></line-chart6>
         </el-card>
       </el-col>
+      <el-col :span="12">
+        <el-card>
+          <line-chart7></line-chart7>
+        </el-card>
+      </el-col>
     </el-row>
   </div>
 </template>
@@ -47,6 +52,7 @@ import lineChart3 from './components/line-chart3/index'
 import lineChart4 from './components/line-chart4/index'
 import lineChart5 from './components/line-chart5/index'
 import lineChart6 from './components/line-chart6/index'
+import lineChart7 from './components/line-chart7/index'
 export default {
   name:'',
   components: {
@@ -56,7 +62,8 @@ export default {
     lineChart3,
     lineChart4,
     lineChart5,
-    lineChart6
+    lineChart6,
+    lineChart7
   },
   data () {
     return {

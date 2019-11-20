@@ -20,8 +20,6 @@ export default {
     this.drawChart();
   },
   methods: {
-   
-   
     drawChart () {
       let size = this.getViewportSize();
       let width = size.width/2 - 40;
@@ -37,7 +35,7 @@ export default {
           container: 'mountNode6',
           height: height,
           width: width,
-          padding: [10, 140, 70, 50]
+          padding: [60, 140, 30, 70]
         });
         chart.source(data, {
           date: {
@@ -160,6 +158,7 @@ export default {
   color: rgb(87, 87, 87);
   font-size: 12px;
   line-height: 20px;
+  top: 10px;
   padding: 10px 10px 6px 10px;
   box-shadow: 0px 0px 10px #aeaeae;
 }

@@ -32,7 +32,7 @@ export default {
           container: 'mountNode1',
           height: height,
           width: width,
-          padding: [120]
+          padding: [60,120,60,60]
         });
         var ds = new DataSet();
         var dv = ds.createView().source(data);

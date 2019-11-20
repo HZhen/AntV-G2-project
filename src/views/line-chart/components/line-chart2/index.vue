@@ -32,7 +32,7 @@ export default {
           container: 'mountNode2',
           height: height,
           width: width,
-          padding: [120]
+          padding: [40]
         });
 
         chart.axis('date', {

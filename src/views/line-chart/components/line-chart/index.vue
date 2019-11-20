@@ -34,7 +34,7 @@ export default {
           container: 'mountNode',
           width: width,
           height: height,
-          padding: [120]
+          padding: [40]
         });
         chart.source(data, {
           date: {

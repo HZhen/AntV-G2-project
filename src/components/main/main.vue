@@ -1,7 +1,7 @@
 <template>
   <div id="main">
-    <el-container style="min-width:1366px;height:100vh">
-      <el-main style="padding:0" id="mainBody">
+    <el-container style="min-width:1366px;">
+      <el-main style="padding:0">
         <router-view />
       </el-main>
     </el-container>
@@ -12,3 +12,8 @@ export default {
   name: 'home'
 }
 </script>
+<style lang="less">
+.el-main {
+  height: auto!important;
+}
+</style>
