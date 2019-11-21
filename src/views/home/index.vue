@@ -1,7 +1,10 @@
 <template>
   <div class="home">
     <el-header>
-      <header class="header">AntV-G2</header>
+      <header class="header">AntV-G2
+        <a class="path" href="https://github.com/HZhen/AntV-G2-project" target="_blank"><img src="@images/home/github.png" alt=""></a>
+      </header>
+      
     </el-header>
     <el-main>
         <el-scrollbar style="height:100%">
