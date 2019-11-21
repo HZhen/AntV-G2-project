@@ -21,6 +21,16 @@
           <pie-chart3></pie-chart3>
         </el-card>
       </el-col>
+      <el-col :span="12">
+        <el-card>
+          <pie-chart4></pie-chart4>
+        </el-card>
+      </el-col>
+      <el-col :span="12">
+        <el-card>
+          <pie-chart5></pie-chart5>
+        </el-card>
+      </el-col>
      </el-row>
   </div>
 </template>
@@ -29,13 +39,17 @@ import pieChart from './components/pie-chart/index'
 import pieChart1 from './components/pie-chart1/index'
 import pieChart2 from './components/pie-chart2/index'
 import pieChart3 from './components/pie-chart3/index'
+import pieChart4 from './components/pie-chart4/index'
+import pieChart5 from './components/pie-chart5/index'
 export default {
   name:'',
   components: {
     pieChart,
     pieChart1,
     pieChart2,
-    pieChart3
+    pieChart3,
+    pieChart4,
+    pieChart5
   },
   data () {
     return {
