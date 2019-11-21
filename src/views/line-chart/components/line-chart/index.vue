@@ -8,8 +8,6 @@ export default {
   data () {
     return {
       chart: null,
-      width: '',
-      height: ''
     }
   },
   beforeRouteEnter (to, from, next) {
