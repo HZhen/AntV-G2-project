@@ -53,51 +53,51 @@ export default {
           path: "/main/point-chart",
           imgURL: require('@images/home/icon-point.png')
         },
-        { 
-          title: "面积图", 
-          path: "/main/area-chart",
-          imgURL: require('@images/home/icon-area.png')
-        },
-        { 
-          title: "箱形图", 
-          path: "/main/box-chart",
-          imgURL: require('@images/home/icon-box.png')
-        },
-        { 
-          title: "烛形图", 
-          path: "/main/candle-chart",
-          imgURL: require('@images/home/icon-candle.png')
-        },
-        { 
-          title: "热力图", 
-          path: "/main/thermal-map",
-          imgURL: require('@images/home/icon-thermal.png')
-        },
-        { 
-          title: "仪表图", 
-          path: "/main/dash-board",
-          imgURL: require('@images/home/icon-dash.png')
-        },
-        { 
-          title: "漏斗图", 
-          path: "/main/funnel-chart",
-          imgURL: require('@images/home/icon-funnel.png')
-        },
-        { 
-          title: "地图", 
-          path: "/main/map",
-          imgURL: require('@images/home/icon-map.png')
-        },
-        { 
-          title: "雷达图", 
-          path: "/main/radar-chart",
-          imgURL: require('@images/home/icon-radar.png')
-        },
-        { 
-          title: "关系图", 
-          path: "/main/relation-chart",
-          imgURL: require('@images/home/icon-relation.png')
-        },
+        // { 
+        //   title: "面积图", 
+        //   path: "/main/area-chart",
+        //   imgURL: require('@images/home/icon-area.png')
+        // },
+        // { 
+        //   title: "箱形图", 
+        //   path: "/main/box-chart",
+        //   imgURL: require('@images/home/icon-box.png')
+        // },
+        // { 
+        //   title: "烛形图", 
+        //   path: "/main/candle-chart",
+        //   imgURL: require('@images/home/icon-candle.png')
+        // },
+        // { 
+        //   title: "热力图", 
+        //   path: "/main/thermal-map",
+        //   imgURL: require('@images/home/icon-thermal.png')
+        // },
+        // { 
+        //   title: "仪表图", 
+        //   path: "/main/dash-board",
+        //   imgURL: require('@images/home/icon-dash.png')
+        // },
+        // { 
+        //   title: "漏斗图", 
+        //   path: "/main/funnel-chart",
+        //   imgURL: require('@images/home/icon-funnel.png')
+        // },
+        // { 
+        //   title: "地图", 
+        //   path: "/main/map",
+        //   imgURL: require('@images/home/icon-map.png')
+        // },
+        // { 
+        //   title: "雷达图", 
+        //   path: "/main/radar-chart",
+        //   imgURL: require('@images/home/icon-radar.png')
+        // },
+        // { 
+        //   title: "关系图", 
+        //   path: "/main/relation-chart",
+        //   imgURL: require('@images/home/icon-relation.png')
+        // },
       ]
     }
   },
